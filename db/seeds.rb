@@ -10,10 +10,17 @@ u5 = User.create(:name => "Richard", :password => "123", :password_confirmation 
 
 
 i1 = Item.create(:name => "iPad 2", :text => "electronics", :photo => "")
-i2 = Item.create(:name => "Corvette", :text => "car", :photo => "")
+i2 = Item.create(:name => "Commodore 64", :text => "computer", :photo => "")
 i3 = Item.create(:name => "Sewing Machine", :text => "home", :photo => "")
 i4 = Item.create(:name => "Microwave", :text => "home", :photo => "")
 i5 = Item.create(:name => "iPhone 5", :text => "electronics", :photo => "")
 i6 = Item.create(:name => "Macbook Pro 13", :text => "electronics", :photo => "")
 i7 = Item.create(:name => "iMac 27", :text => "computer", :photo => "")
+i8 = Item.create(:name => "iPod Nano", :text => "electronics", :photo => "")
+i9 = Item.create(:name => "Nintendo Wii", :text => "electronics", :photo => "")
+i10 = Item.create(:name => "Xbox 360", :text => "electronics", :photo => "")
+i11 = Item.create(:name => "Playstation 3", :text => "electronics", :photo => "")
+i12 = Item.create(:name => "Neo Geo", :text => "electronics", :photo => "")
+i13 = Item.create(:name => "Nintendo Wii U", :text => "electronics", :photo => "")
+i14 = Item.create(:name => "Sega Genesis", :text => "electronics", :photo => "")
 
