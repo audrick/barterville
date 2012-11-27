@@ -18,4 +18,10 @@ class ItemsController < ApplicationController
     @items = Item.where(:name => name)
   end
 
+  def edit
+    id = params[:id]
+    @item = Item.find(id)
+  end
+
+
 end
