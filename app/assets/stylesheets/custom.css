@@ -1,0 +1,17 @@
+#btn-signup {
+  width:  100px;
+  margin-left:  400px;
+  margin-top: 0px;
+  color:  #FFF;
+}
+
+#register-form-btn {
+  width: 200px;
+  padding:  15px 10px;
+  font-size: 28px;
+  color:  #FFF;
+  text-shadow:  1px 1px 1px #000;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#569700), to(#84E900));
+}
+

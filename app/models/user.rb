@@ -12,6 +12,7 @@
 
 class User < ActiveRecord::Base
   has_secure_password
+
   has_many :items
   has_many :sent_offers, :class_name => 'Offer', :foreign_key => 'sender_id'
   has_many :received_offers, :class_name => 'Offer', :foreign_key => 'receiver_id'

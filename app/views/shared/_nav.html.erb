@@ -1,0 +1,17 @@
+<!-- main nav bar -->
+<div class="row">
+  <div class="span12">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <%= link_to "BartersVille", root_path, class: "brand" %>
+          <ul class="nav">
+            <li class="active"><%= link_to "Home", root_path %></li>
+            <li><%= link_to "About", about_path %></li>
+            <li><%= link_to "FAQ", faq_path %></li>
+            <li><%= link_to "Contact", contact_path %></li>
+            <li><%= link_to "Sign In", id: 'signin-btn' %></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>

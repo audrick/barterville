@@ -1,8 +1,7 @@
-<% content_for :submenu do %>
-  <%= link_to "Home", index_path %>
-  <%= link_to "About", about_path %>
-  <%= link_to "Contact", faq_path %>
-  <%= link_to "FAQ", faq_path %>
+<% content_for :sidemenu do %>
+  <p><%= link_to "Top 3 Questions", about_path %></p>
+  <p><%= link_to "Dispute Resolution", faq_path %></p>
+  <p><%= link_to "whatever", faq_path %></p>
 <% end %>
 
 

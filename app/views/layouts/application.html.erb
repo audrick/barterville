@@ -8,7 +8,50 @@
 </head>
 <body>
 
-<%= yield %>
+  <div class="container">
+
+    <div class="row" id="sign-in-dropdown">
+      <div class="span12">
+        <%= form_tag '/login' do  %>
+        Enter Name:
+        <p><%=  text_field_tag 'name' %></p>
+        Enter Password:
+        <p><%= password_field_tag  %></p>
+        <%= submit_tag 'go'  %>
+        <% end  %>
+      </div>
+    </div>
+
+    <%= render 'shared/nav' %>
+
+    <div class="row">
+      <div class="span3">
+        <%= yield :sidemenu %>
+        <%= render 'shared/search'   %>
+      </div>
+      <div class="span9">
+        <%#=  render 'shared/signin_out' %>
+        <%= yield %>
+      </div>
+    </div>
+
+    <%= render 'shared/footer' %>
+
+  </div><!-- end container -->
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
