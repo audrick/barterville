@@ -4,9 +4,22 @@ Barterville::Application.routes.draw do
   resources :users
   resources :offers
 
+  get '/login' => 'home#login'
+  get '/register' => 'home#register'
+
   get '/about' => 'home#about'
   get '/contact' => 'home#contact'
   get '/faq' => 'home#faq'
+  post '/items' => 'items#create'
+  get '/items/:id' => 'items#show', :as => :item
+
+  get '/search' => 'items#search'
+
+
+
+
+
+
 
 
 
