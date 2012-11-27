@@ -1,7 +1,15 @@
 Barterville::Application.routes.draw do
 
+<<<<<<< HEAD
+
+  root :to => 'users#new'
+
+  resources :items
+  resources :users, :except => [:new]
+=======
   resources :users
   resources :items
+>>>>>>> 27000b929445c95590cf8392302c02fdf0a2b6d4
   resources :offers
 
   get '/login' => 'home#login'
@@ -20,6 +28,9 @@ Barterville::Application.routes.draw do
 
 
 
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
 
 
 
@@ -72,7 +83,7 @@ Barterville::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#index'
+
 
   # See how all your routes lay out with "rake routes"
 
