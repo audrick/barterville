@@ -1,15 +1,32 @@
 Barterville::Application.routes.draw do
 
+<<<<<<< HEAD
 
   root :to => 'users#new'
 
   resources :items
   resources :users, :except => [:new]
+=======
+  resources :users
+  resources :items
+>>>>>>> 27000b929445c95590cf8392302c02fdf0a2b6d4
   resources :offers
+
+  get '/login' => 'home#login'
+  get '/register' => 'home#register'
 
   get '/about' => 'home#about'
   get '/contact' => 'home#contact'
   get '/faq' => 'home#faq'
+  post '/items' => 'items#create'
+
+  get '/items/:id' => 'items#show', :as => :item
+  get '/search' => 'items#search'
+
+
+
+
+
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'

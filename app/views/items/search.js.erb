@@ -1,0 +1,5 @@
+$('#items').empty();
+
+<% @items.each do |it| %>
+$('#items').prepend('<li><%= link_to it.name, item_path(ct) %></li>');
+<% end %>
