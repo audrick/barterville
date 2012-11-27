@@ -12,13 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-<<<<<<< HEAD
+
 //= require_tree .
 //= require 'custom'
-=======
 //= require 'js/bootstrap.js'
-//= require 'barter.js'
 
 
 
->>>>>>> 27000b929445c95590cf8392302c02fdf0a2b6d4

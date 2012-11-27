@@ -11,7 +11,6 @@ function reveal(){
 }
 
 function reveal_drop(){
-  $('#sign-in-dropdown').slideDown(2000);
+  $('#sign-in-dropdown').slideDown(800);
 }
-
 
